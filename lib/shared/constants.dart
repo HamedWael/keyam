@@ -1,0 +1,10 @@
+const String imgPath1 = "assets/images/img1.png";
+const String imgPath2 = "assets/images/img2.png";
+const String imgPath3 = "assets/images/img3.png";
+const String imgPath4 = "assets/images/img4.png";
+const String imgPath5 = "assets/images/img5.png";
+const String imgPath7 = "assets/images/img7.png";
+const String imgPath8 = "assets/images/img8.png";
+const String imgPath9 = "assets/images/img9.png";
+const String imgPath10 = "assets/images/img10.png";
+const String imgPath11 = "assets/images/img11.png";
