@@ -6,7 +6,7 @@ import 'package:keyam/layouts/home_layout.dart';
 void main() {
 
   runApp(DevicePreview(
-    enabled: true, //!kReleaseMode,
+    enabled: false, //!kReleaseMode,
     builder: (context) => const MyApp(), // Wrap your app
 
   ),
@@ -19,9 +19,22 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Directionality(
+      theme: ThemeData(
+        textTheme: const TextTheme(
+          bodyText1: TextStyle(
+            color: Colors.black,
+            fontSize: 16
+          ),
+          headline1: TextStyle(
+            color: Colors.black,
+            fontSize: 18,
+            fontWeight: FontWeight.bold
+          ),
+        ),
+      ),
+      home: const Directionality(
         textDirection: TextDirection.rtl,
           child: SafeArea(child: Home())
       ),

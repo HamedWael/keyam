@@ -36,6 +36,13 @@ dependencies:
   cupertino_icons: ^1.0.2
   device_preview: ^1.1.0
   day_night_switcher: ^0.2.0+1
+  url_launcher: ^6.1.6
+  flutter_launcher_icons: ^0.10.0
+
+flutter_icons:
+  ios: true
+  android: true
+  image_path: "assets/images/logo.png"
 
 
 dev_dependencies:
@@ -68,11 +75,20 @@ flutter:
    - assets/images/img3.png
    - assets/images/img4.png
    - assets/images/img5.png
+   - assets/images/img6.png
    - assets/images/img7.png
    - assets/images/img8.png
    - assets/images/img9.png
    - assets/images/img10.png
    - assets/images/img11.png
+   - assets/images/agyal.jpeg
+   - assets/images/bank.jpeg
+   - assets/images/min1.jpg
+   - assets/images/min2.png
+   - assets/images/min3.jpeg
+   - assets/images/min4.jpeg
+   - assets/images/misr.jpeg
+   - assets/images/team.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -85,10 +101,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Almarai
+      fonts:
+        - asset: assets/fonts/almarai.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../models/keyam_model.dart';
+import '../../shared/constants.dart';
 
 class KemaScreen extends StatelessWidget {
   const KemaScreen({Key? key, this.img, this.des, this.ind}) : super(key: key);
@@ -13,15 +14,22 @@ class KemaScreen extends StatelessWidget {
     return Directionality(
       textDirection: TextDirection.rtl,
       child: Scaffold(
-        appBar: AppBar(),
+        //appBar: AppBar(),
           body: Container(
             padding: const EdgeInsets.all(24),
-            child: Column(
-              children: [
-                Image.asset(keyamModel[ind]["imagePath"]),
-                SizedBox(height: 24,),
-                Text(keyamModel[ind]["description"]),
-              ],
+            child: Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Image.asset(img),
+                    SizedBox(height: 24,),
+                    Text(
+                      des,
+                      style: Theme.of(context).textTheme.bodyText1,
+                    ),
+                  ],
+                ),
+              ),
             ),
           )
       ),

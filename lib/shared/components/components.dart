@@ -28,40 +28,40 @@ appBar({color = Colors.white}){
   );
 }
 
-Widget keyamBuild({imgPath, name}){
-  return InkWell(
-    onTap: (){
-      // navigateTo(
-      //     context,
-      //     KemaScreen(
-      //       img: keyamModel[index]["imagePath"],
-      //       des: keyamModel[index]["description"],
-      //       ind: index,
-      //     )
-      // );
-    },
-    child: Container(
-      padding: const EdgeInsets.all(8),
-      decoration: BoxDecoration(
-          color: antiFlashWhite3,
-          borderRadius: BorderRadius.circular(24)
-      ),
-      child: Column(
-        children: [
-          Text(
-            name,
-            style: const TextStyle(
-                fontSize: 20,
-                color: Colors.black
-            ),
-          ),
-          Image.asset(
-              imgPath,
-              fit: BoxFit.cover,
-          ),
-        ],
-      ),
-    ),
-  );
-}
+// Widget keyamBuild({imgPath, name}){
+//   return InkWell(
+//     onTap: (){
+//       // navigateTo(
+//       //     context,
+//       //     KemaScreen(
+//       //       img: keyamModel[index]["imagePath"],
+//       //       des: keyamModel[index]["description"],
+//       //       ind: index,
+//       //     )
+//       // );
+//     },
+//     child: Container(
+//       padding: const EdgeInsets.all(8),
+//       decoration: BoxDecoration(
+//           color: antiFlashWhite3,
+//           borderRadius: BorderRadius.circular(24)
+//       ),
+//       child: Column(
+//         children: [
+//           Text(
+//             name,
+//             style: const TextStyle(
+//                 fontSize: 20,
+//                 color: Colors.black
+//             ),
+//           ),
+//           Image.asset(
+//               imgPath,
+//               fit: BoxFit.cover,
+//           ),
+//         ],
+//       ),
+//     ),
+//   );
+// }
 
