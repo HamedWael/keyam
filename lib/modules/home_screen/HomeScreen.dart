@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.only(left: 24, right: 24),
+        padding: const EdgeInsets.only(left: 24, right: 24, top: 24),
         decoration: const BoxDecoration(
           color: Colors.white,
         ),

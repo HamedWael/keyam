@@ -11,28 +11,33 @@ class KemaScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Directionality(
-      textDirection: TextDirection.rtl,
-      child: Scaffold(
-        //appBar: AppBar(),
-          body: Container(
-            padding: const EdgeInsets.all(24),
-            child: Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Image.asset(img),
-                    SizedBox(height: 24,),
-                    Text(
-                      des,
-                      style: Theme.of(context).textTheme.bodyText1,
-                    ),
-                  ],
+    return Scaffold(
+      body: Directionality(
+        textDirection: TextDirection.rtl,
+        child: Container(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            children: [
+              Expanded(
+                child: SingleChildScrollView(
+                  physics: BouncingScrollPhysics(),
+                  child: Column(
+                    children: [
+                      Image.asset(img),
+                      SizedBox(height: 24,),
+                      Text(
+                        des,
+                        style: Theme.of(context).textTheme.bodyText1,
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          )
+            ],
+          ),
+        ),
       ),
     );
+
   }
 }
